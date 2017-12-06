@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Chat System</title>
+</head>
+<body>
+    <div id="connectMenu">
+        <form id="connectForm" name="connectForm">
+            <input id="name" type="text" placeholder="Input your name"/>
+            <button type="submit">Connect</button>
+        </form>
+    </div>
+    <br/>
+    <div id="sendMenu">
+        <form id="sendMessageForm" name="sendMessageForm">
+            <input id="message" type="text" placeholder="Input your message"/>
+            <button type="submit">Send message</button>
+        </form>
+    </div>
+    <textarea id="messageArea"></textarea>
+
+
+    <script src="/stomp.min.js"></script>
+    <script src="/stockjs.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
